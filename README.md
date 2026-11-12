@@ -1,5 +1,6 @@
 # hackerx-ethical-hacking-journey
 A comprehensive hands-on journey through Ethical Hacking using HackerX — covering networking, WiFi hacking, OSINT, AI in cybersecurity, web vulnerabilities, and more.
+
 # 🛡️ Ethical Hacking Journey — HackerX
 
 🚀 This repository documents my complete journey of learning **Cybersecurity & Ethical Hacking** through the **HackerX platform**.
@@ -39,6 +40,10 @@ This course covers a wide range of cybersecurity domains:
 21. Vulnerability Scanning & Reporting  
 22. Interview Questions  
 
+### AI-assisted sandbox curriculum
+
+See **[07 — Updated Defensive Methods for Every Course Topic](07-ai-sandbox-learning/README.md)** for all 22 topics, synthetic-data exercises, current defensive learning goals, and official references. It is a learning guide, not a working AI agent. Risky topics are covered through defense, detection, prevention, incident response, or harmless simulations only.
+
 ---
 
 ## 🧪 Progress Tracker
@@ -51,7 +56,8 @@ This course covers a wide range of cybersecurity domains:
 | 04 - AI for Hacking | ✅ Completed |
 | 05 - Prompt Guide | ✅ Completed |
 | 06 - Hiding Messages | ✅ Completed |
-| 07 - Anonymous Surfing | ✅ Completed |
+| 07 - Anonymous Surfing | ⏳ Pending |
+| AI-Assisted Sandbox Curriculum | 📘 Guide added |
 | 08 - Social Media Hacking | ⏳ Pending |
 
 ---
@@ -87,7 +93,7 @@ All techniques demonstrated are to be used:
 - In legal environments  
 - With proper authorization  
 
-I do NOT support or promote illegal hacking activities.
+I do NOT support or promote illegal hacking activities. The AI-assisted curriculum uses synthetic data and defensive simulations; it does not authorize testing real systems.
 
 ---
 
