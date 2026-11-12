@@ -1,35 +1,28 @@
-# Safe Sandbox AI Tutor
+# Command-driven offline lesson simulator
 
-This folder contains a local, synthetic-only learning scaffold for the cybersecurity topics in the repository README.
+This folder provides a small, command-driven educational simulator for all 22 README topics. `command_runner.py` runs prewritten synthetic scenarios; your command starts a lesson or batch, and the simulator prints each step and its defensive takeaways.
 
-## What it does
+## Run
 
-- Shows a list of all 22 topics
-- Explains each topic using fictional data and a safe educational simulation
-- Requires you to type `yes` before any simulation continues
-- Shows the recommended mitigations and keeps the learning environment sandboxed
-- Does not touch your real filesystem, credentials, networks, or public systems
-
-## How to run
+From this directory:
 
 ```bash
-cd safe-lab
-python3 ai_tutor.py
+python3 command_runner.py
 ```
 
-## Example
+Examples:
 
 ```text
-Select a topic number (1-22), type 'all' for all topics, or 'exit': 11
+sandbox> run 12
+sandbox> run WiFi WPA/WPA2
+sandbox> secure 17
+sandbox> run all
 ```
 
-This opens the Wi-Fi lesson using synthetic data only.
+`run all` starts the full synthetic lesson batch. Press Ctrl-C to stop it.
 
-## Safety rules
+## Scope and limits
 
-- Use this script only inside a disposable local lab or VM
-- Never point it at real Wi-Fi, hosts, or public systems
-- Keep all materials synthetic and sandboxed
-- Human approval is required before each simulation continues
-- Treat the output as educational content, not a real-world attack workflow
+This is an **offline simulator**, not an AI model and not an operating-system sandbox or real cyber range. It has no network client, shell execution, arbitrary code execution, credential access, or file-writing logic. It only displays the lesson data and descriptions in `ai_tutor.py`. The Wi-Fi lessons model fictional configuration and defensive recommendations; they do not create an access point, capture traffic, or crack passwords.
 
+The command parser accepts only `list`, `run`, `secure`, `help`, and `exit`. A command outside that allowlist is rejected, not passed to a shell or model. Review the code before running it. For stronger isolation, run it in a disposable VM/container with networking disabled.
